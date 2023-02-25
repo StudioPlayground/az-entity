@@ -1,4 +1,4 @@
-package com.azit.aziterd.entity.account;
+package com.azit.aziterd.entity.accountpurpose;
 
 import com.azit.aziterd.entity.common.Identifier;
 import jakarta.persistence.Embeddable;

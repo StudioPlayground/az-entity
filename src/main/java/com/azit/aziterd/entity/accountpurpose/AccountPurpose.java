@@ -1,12 +1,11 @@
-package com.azit.aziterd.entity.account;
+package com.azit.aziterd.entity.accountpurpose;
 
+import com.azit.aziterd.entity.account.Account;
 import com.azit.aziterd.entity.purpose.Purpose;
-import com.azit.aziterd.entity.purpose.PurposeId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 
 @Entity
