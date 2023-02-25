@@ -15,6 +15,7 @@ import java.time.LocalDate;
 public class Account {
 
     @Id
+    @Embedded
     @GeneratedValue
     private AccountId id;
 
@@ -25,6 +26,9 @@ public class Account {
 
     @Embedded
     private Email email;
+
+    @Embedded
+    private AccountProfile profile;
 
     @Enumerated(EnumType.STRING)
     private AccountStatus status;
