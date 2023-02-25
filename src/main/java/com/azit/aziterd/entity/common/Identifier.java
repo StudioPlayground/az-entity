@@ -1,6 +1,8 @@
 package com.azit.aziterd.entity.common;
 
-public interface Identifier {
+import java.io.Serializable;
+
+public interface Identifier extends Serializable {
   Long id();
 
   default boolean isNull() {
