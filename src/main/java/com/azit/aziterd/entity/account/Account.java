@@ -1,5 +1,8 @@
 package com.azit.aziterd.entity.account;
 
+import com.azit.aziterd.entity.common.Email;
+import com.azit.aziterd.entity.common.Gender;
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -11,21 +14,22 @@ import java.time.LocalDate;
 @Entity
 public class Account {
 
-  @Id
-  @GeneratedValue
-  private Long id;
+    @Id
+    @GeneratedValue
+    private Long id;
 
-  private LocalDate birthDate;
+    private LocalDate birthDate;
 
-  @Enumerated(EnumType.STRING)
-  private Gender gender;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 
-  private Email email;
+    @Embedded
+    private Email email;
 
-  @Enumerated(EnumType.STRING)
-  private AccountStatus status;
+    @Enumerated(EnumType.STRING)
+    private AccountStatus status;
 
-  @Enumerated(EnumType.STRING)
-  private AccountRole role;
+    @Enumerated(EnumType.STRING)
+    private AccountRole role;
 
 }
