@@ -16,7 +16,7 @@ public class Account {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private AccountId id;
 
     private LocalDate birthDate;
 
